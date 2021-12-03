@@ -68,3 +68,4 @@ print(lst1 > lst2) => Output:false ထွက်မယ် because individual ခ�
 	business data ကို ဘယ်လိုသိမ်းမလဲ design ချတာကို database modeling လို့ခေါ်
 	Schema <= database ဆောက်တာ
 	one to many or many_to_many ပဲဖြစ်ဖြစ် mapping table လိုတယ်
+	hello github
