@@ -1,0 +1,70 @@
+								Datatype-2
+
+Dictionary [ key , value ]  => key သည် unique (ထပ်လို့မရ)
+
+x = input("Enter x") => input က လက်ခံတဲ့ကောင်သည် string ဖြစ်တယ် so => x = int(input("Enter x"))
+
+lst1 = [10,20]
+lst2 = [20,30]
+print(lst1 > lst2) => Output:false ထွက်မယ် because individual ချင်း တိုက်စစ်လို့ 
+* semantic သိဖို့ ခက်တယ်။ **
+
+ 			***List***
+ 	pusH သည် append နဲ့တူ (နောက်ကနေထည့်)
+	list မာ type မတူရင် sort လုပ်လို့မရ reverse တော့ ရတယ်
+	in =>ရှိသလား မရှိဘူးလား စစ်တာ
+	Enumerate ကို list မှာ element တွေ ပြောင်းချင်တဲ့ အခါ သုံး
+
+			***func***
+	return တစ်ခုထက် လိုချင်ရင် tuple သုံးလို့ရတယ်
+	error handling တွေမာ mulitple return သုံး
+	ပေးလိုက် ရင် Arguments 
+	func(parameter,parameter)
+	keyword Arguments => parameter ရှေ့နောက် မညီလည်းရ
+					  => parameter များရင် သုံးသင့်
+	parameter 4 ခုထက်ပိုရင် Dictionary သုံးသင့်တယ်။
+	
+			***OOP***
+	three OO feature =>encapsulation,Inheritance,polymorphism
+	oop programming က feature 3 ခု ကိုပေးတယ်။
+	encapsulation ဆိုတာက သူ့ data နဲံသူ တွဲပီးအလုပ်လုပ်တယ်
+	object ရဲ့ data ကိုသုံးခွင့်ရှိသော or တွဲလျက် သုံးလို့ရသော function 
+	ကို method လို့ခေါ်
+	oop ကို static type language တွေကနေလေ့လာတာ ပိုကောင်းတယ်
+	instance variable ဆိုတာလည်း object variable ပြောင်းချင်တဲ့
+	object ထဲက instance variable တွေကို Dictionary နဲ့သိမ်းသွားတယ်
+
+			***Synchronization***
+	resource တစ်ခုတည်းရှိတာကို မျှပြီးသုံးတာသည်  Synchronization ဖြစ်တယ်
+	concurrent problem,
+	thread နှစ်ခုက တစ်ပြိုင်တည်းလာလုပ်ရင် problem တက်နိုင်တဲ့ code သည် critical section လို့ခေါ်
+	analogy အရဆို အိမ်သာ တက်သလိုပဲ
+	share သုံးနေရတဲ့ ဘုံသုံးရတဲ့ code တွေကို critical section လို့ခေါ်တယ်
+	concurrency program တွေမာ Synchronization ကိုသေချာမထိန်းရင် Dead lock ဖြစ်လာနိုင်တယ်
+	Rlock ကို recursive ခေါ်တဲ့ code တေမာသုံးလို့ရတယ်
+	semaphore(3)၊ resource ကို limit လုပ်ချင်တယ် & code ကို thread ဘယ်နှခုပဲ သုံးစေချင်တဲ့ နေရာမာ
+	semaphore ကိုသုံးလို့ရတယ်။ Analogy အရဆို အိမ်သာ သုံးလုံးတွဲ
+	semaphore problem <= acquire က limit ရှိပေမယ့် release ကကြိုက်သလောက် ခေါ်လို့ရတယ်
+	producer consumer problem 
+	Queue က Synchronization ကို နကို တည်းက ထိန်းပေးပီးသား အလုပ်ရှုပ်သက်သာချင်ရင် တော့ Queueသုံးလို့ရတယ်
+	number သေးလေ Priority မြင့်လေ ပဲ Priority Queue
+
+			***Regular Expression&WebScraping
+
+	\d{9,11} <= digit ကိုပြောချင်တာ ၉ကနေ ၁၁ ကြား 
+	\D <= none digit
+	\s means white space | \S none white space
+	web crawling 
+	re.split("\.") dot တစ်ခုနဲ့တစ်ခုကို ခွဲတာ eg(www.google.com)
+	Beautiful soup library ကိုစမ်းသုံးကြည့်တာ ကောင်းမယ်
+	
+			***Database****
+	NoSQL means not only Database
+	Querying <= လိုချင်တဲ့ ဒေတာကို query သုံးပြီး ဆွဲထုတ်တာကို ခေါ်လို့ရတယ်
+	RDBMS 
+		Structure Query language
+			DDL(Data definition language)
+			DML(Data Manipulation language)
+	business data ကို ဘယ်လိုသိမ်းမလဲ design ချတာကို database modeling လို့ခေါ်
+	Schema <= database ဆောက်တာ
+	one to many or many_to_many ပဲဖြစ်ဖြစ် mapping table လိုတယ်
